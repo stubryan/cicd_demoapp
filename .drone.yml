@@ -15,3 +15,13 @@ publish:
         username: stubryan
         password: Sixbells6
         email: stubryan@cisco.com
+deploy:
+    webhook:
+        image: plugins/drone-webhook
+        skip_verify: true
+        method: POST
+        auth:
+            username: admin
+            password: 1vtG@lw@y
+        urls:
+            - https://mantlsandbox.cisco.com/marathon/v2/apps/class/stubryan/restart?force=true
