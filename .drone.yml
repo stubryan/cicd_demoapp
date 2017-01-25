@@ -25,3 +25,8 @@ deploy:
             password: 1vtG@lw@y
         urls:
             - https://mantlsandbox.cisco.com/marathon/v2/apps/class/stubryan/restart?force=true
+notify:
+    spark:
+        image: hpreston/drone-spark
+        auth_token: YTE5ZDZjYzAtMmM5ZC00YTViLWI0MjYtNTNhNDI1ZGJhYjJlZWIyNDlkNTctYmYx
+        roomId: Y2lzY29zcGFyazovL3VzL1JPT00vODU2MDlkMzAtZTE1NS0xMWU2LTg3YTQtMzlhMGRlZDgwNzhk
