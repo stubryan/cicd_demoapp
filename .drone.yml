@@ -8,3 +8,10 @@ build:
         commands:
             - pip install -r requirements.txt
             - python testing.py
+publish:
+    docker:
+        repo: $$stubryan/cicd_demoapp
+        tag: latest
+        username: $$stubryan
+        password: $$Sixbells6
+        email: $$stubryan@cisco.com
